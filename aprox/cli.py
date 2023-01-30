@@ -12,9 +12,7 @@ import colorama
 from colorama import Fore, Back, Style
 
 def get_adb_path():
-    home_dir = os.environ['HOME']
-    adb_path = glob.glob(home_dir + '/Library/Android/sdk/platform-tools/adb')[0]
-    return adb_path
+    return "adb"
 
 def get_network_id():
     adb_path = get_adb_path()
